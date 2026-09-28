@@ -7,7 +7,7 @@ import session from "express-session";
 import { OAuth2Client } from "google-auth-library";
 
 const app = express();
-
+app.set("trust proxy", 1);
 const PORT = Number(process.env.PORT) || 3000;
 
 
